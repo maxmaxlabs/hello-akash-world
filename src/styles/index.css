@@ -1,0 +1,21 @@
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.animated-background {
+  animation: pulse 15s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 125%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}

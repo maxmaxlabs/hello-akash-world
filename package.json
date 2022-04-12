@@ -1,0 +1,39 @@
+{
+  "name": "hello-akash-world",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.7.1",
+    "@emotion/css": "^11.7.1",
+    "@emotion/react": "^11.8.1",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.4.4",
+    "@mui/material": "^5.4.4",
+    "@nivo/core": "^0.79.0",
+    "@nivo/line": "^0.79.1",
+    "next": "latest",
+    "next-dark-mode": "^3.0.0",
+    "next-pwa": "^5.4.6",
+    "nprogress": "^0.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-error-boundary": "^3.1.4",
+    "react-intl": "^5.24.6",
+    "sharp": "^0.30.3",
+    "tss-react": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.21",
+    "@types/nprogress": "^0.2.0",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "typescript": "^4.5.5"
+  }
+}
