@@ -5,9 +5,8 @@ import { IntlProvider } from "react-intl";
 import { ErrorBoundary } from "react-error-boundary";
 import { ErrorFallback } from "../shared/ErrorFallback";
 import { makeStyles } from "tss-react/mui";
-import { keyframes } from "@emotion/react";
-import { useTheme } from "@mui/material/styles";
 import { cx } from "@emotion/css";
+import { animated, useSpring } from "@react-spring/web";
 
 type Props = {
   children?: ReactNode;
@@ -32,6 +31,7 @@ const useStyles = makeStyles()(theme => ({
 
 const Layout: React.FunctionComponent<Props> = ({ children, title = "Hello Akash World" }) => {
   const [locale, setLocale] = useState("en");
+
   useEffect(() => {
     if (navigator?.language) {
       setLocale(navigator?.language);
@@ -47,6 +47,12 @@ const Layout: React.FunctionComponent<Props> = ({ children, title = "Hello Akash
 
 const LayoutApp: React.FunctionComponent<Props> = ({ children, title }) => {
   const { classes } = useStyles();
+  const [isMounted, setIsMounted] = useState(false);
+  const styles = useSpring({ opacity: isMounted ? 0.1 : 0, config: { duration: 3000 } });
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   return (
     <Box
@@ -57,7 +63,7 @@ const LayoutApp: React.FunctionComponent<Props> = ({ children, title }) => {
         position: "relative"
       }}
     >
-      <div className={cx("animated-background", classes.background)} />
+      <animated.div style={styles} className={cx("animated-background", classes.background)} />
       <PageHead headTitle={title} />
 
       <Box sx={{ height: "100%" }}>
