@@ -11,8 +11,6 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           {/* PWA */}
-          <meta charSet="utf-8" />
-          <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no" />
           <link rel="shortcut icon" href="/icons/favicon.ico" />
           <link rel="manifest" href="/icons/manifest.json" />
           <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color={customColors.darkBlue} />
