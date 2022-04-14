@@ -1,6 +1,6 @@
 {
   "name": "hello-akash-world",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "private": true,
   "browserslist": "> 0.25%, not dead",
   "scripts": {

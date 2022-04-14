@@ -11,6 +11,8 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           {/* PWA */}
+          <meta charSet="utf-8" />
+          <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no" />
           <link rel="shortcut icon" href="/icons/favicon.ico" />
           <link rel="manifest" href="/icons/manifest.json" />
           <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color={customColors.darkBlue} />
@@ -19,6 +21,8 @@ export default class MyDocument extends Document {
           <meta name="theme-color" content={customColors.darkBlue} />
           <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
+
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=optional" rel="stylesheet" />
 
           {/* Inject MUI styles first to match with the prepend: true configuration. */}
           {(this.props as any).emotionStyleTags}

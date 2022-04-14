@@ -44,18 +44,7 @@ const getDesignTokens = (mode: PaletteMode): ThemeOptions => ({
         })
   },
   typography: {
-    fontFamily: [
-      "-apple-system",
-      "BlinkMacSystemFont",
-      '"Segoe UI"',
-      "Roboto",
-      '"Helvetica Neue"',
-      "Arial",
-      "sans-serif",
-      '"Apple Color Emoji"',
-      '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"'
-    ].join(",")
+    fontFamily: "'Inter', sans-serif"
   },
   breakpoints: {
     values: {

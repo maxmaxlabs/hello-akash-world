@@ -25,7 +25,7 @@ const useStyles = makeStyles()(theme => ({
   },
   subTitle: {
     fontSize: "2rem",
-    fontWeight: "lighter",
+    fontWeight: "300",
     marginBottom: "2rem"
   },
   socials: {
@@ -74,10 +74,10 @@ const IndexPage: React.FunctionComponent<Props> = () => {
               Hello from Akash!
             </Typography>
             <Typography variant="h1" className={classes.subTitle}>
-              Welcole to Akashlytics Deploy
+              Welcome to Akashlytics Deploy
             </Typography>
 
-            <Typography variant="body1" sx={{ mb: 2 }}>
+            <Typography variant="body1" sx={{ mb: 1 }}>
               This is a{" "}
               <a href="https://nextjs.org/" target="_blank">
                 NextJS
@@ -92,7 +92,7 @@ const IndexPage: React.FunctionComponent<Props> = () => {
               </a>
             </Typography>
 
-            <Typography variant="body2">
+            <Typography variant="body2" sx={{ fontWeight: 300 }}>
               You can find all the documentation to deploy on akash{" "}
               <a href="https://docs.akash.network/" target="_blank">
                 here!
@@ -153,10 +153,4 @@ const IndexPage: React.FunctionComponent<Props> = () => {
 };
 
 export default IndexPage;
-
-export async function getStaticProps(context) {
-  return {
-    props: {} // will be passed to the page component as props
-  };
-}
 
