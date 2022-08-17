@@ -3,7 +3,7 @@ version: "2.0"
 
 services:
   web:
-    image: akashlytics/hello-akash-world:0.1.0
+    image: akashlytics/hello-akash-world:0.2.0
     expose:
       - port: 3000
         as: 80

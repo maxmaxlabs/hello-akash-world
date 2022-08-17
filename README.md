@@ -4,7 +4,7 @@ This is a simple project that shows the usage of [Next.js](https://nextjs.org/) 
 
 ## Deploy on Akash
 
-1. Download the latest version of [Akashlytics Deploy.](https://akashlytics.com/deploy)
+1. Download the latest version of [Cloudmos Deploy.](https://cloudmos.io/cloud-deploy)
 
 2. Simply create a new deployment with the [hello world template.](https://github.com/Akashlytics/hello-akash-world/blob/master/deploy.yml)
 

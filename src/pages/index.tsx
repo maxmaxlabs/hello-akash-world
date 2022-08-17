@@ -74,7 +74,7 @@ const IndexPage: React.FunctionComponent<Props> = () => {
               Hello from Akash!
             </Typography>
             <Typography variant="h1" className={classes.subTitle}>
-              Welcome to Akashlytics Deploy
+              Welcome to Cloudmos Deploy
             </Typography>
 
             <Typography variant="body1" sx={{ mb: 1 }}>
@@ -100,8 +100,8 @@ const IndexPage: React.FunctionComponent<Props> = () => {
             </Typography>
 
             <Typography variant="caption">
-              <a href="https://akashlytics.com" target="_blank">
-                www.akashlytics.com
+              <a href="https://cloudmos.io/" target="_blank">
+                cloudmos.io
               </a>
             </Typography>
 
@@ -117,7 +117,7 @@ const IndexPage: React.FunctionComponent<Props> = () => {
                 </a>
               </Grid>
               <Grid item xs={6} sm={3}>
-                <a href="https://twitter.com/akashlytics" target="_blank" className={classes.socialLink}>
+                <a href="https://twitter.com/cloudmosio" target="_blank" className={classes.socialLink}>
                   <TwitterIcon className={classes.socialIcon} />
                 </a>
               </Grid>

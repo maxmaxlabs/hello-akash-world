@@ -15,7 +15,7 @@ type Props = {
 
 const useStyles = makeStyles()(theme => ({
   background: {
-    backgroundImage: "url('/images/akashlytics_logo_transparent.png')",
+    backgroundImage: "url('/images/cloudmos_logo_transparent.png')",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     filter: "blur(8px)",
